@@ -18,7 +18,7 @@
             </span>
         </form>
     </div>
-    <div class="p-5">
+    <div class="pt-5 p-1">
         <!-- component -->
 <table class="min-w-full border-collapse block md:table">
 		<thead class="block md:table-header-group">
@@ -43,31 +43,6 @@
 		</tbody>
 	</table>
     </div>
-    <!-- <div>
-        <table class="p-14 flex flex-col gap-3 items-center justify-center">
-            <thead class="w-full shadow-lg rounded-md">
-                <tr class=" p-1 rounded-sm w-full flex justify-between">
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Second Name</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody v-for="(item,index) in data" :key="index" :class="item==null ? 'hidden' : 'w-full shadow-lg rounded-md'">
-                <tr class="p-1 rounded-sm w-full flex items-center justify-between gap-10">
-                    <td>{{ index + 1 }}</td>
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.secondName }}</td>
-                    <td>
-                        <span class="flex gap-2">
-                            <button class="btn btn-primary" @click="EditModal(item.id)">Edit</button>
-                            <button class="btn btn-danger" @click="Delete(item.id)">Delete</button>
-                        </span>
-                    </td>   
-                </tr>
-            </tbody>
-        </table>
-    </div> -->
        <div :class="editModal ? 'p-14 flex items-center absolute justify-center w-full' : 'hidden'">
         <form @submit.prevent="addStudent()" class="bg-slate-300 flex flex-col gap-1 p-3 rounded-md">
             <span class="flex flex-col gap-1">
