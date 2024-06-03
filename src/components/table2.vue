@@ -31,9 +31,9 @@
 		</thead>
 		<tbody v-for="(item,index) in data" :key="index" class="block md:table-row-group">
 			<tr class="bg-gray-300 border border-grey-500 md:border-none block md:table-row">
-				<td class="p-2 w-[20px] md:border md:border-grey-500 text-left block md:table-cell">{{ index +1  }}</td>
-				<td class="p-2 md:border md:border-grey-500 text-left block md:table-cell">{{ item.name }}</td>
-				<td class="p-2 md:border md:border-grey-500 text-left block md:table-cell">{{ item.secondName }}</td>
+				<td class="p-2 w-[20px] md:border md:border-grey-500 text-left block md:table-cell"><span class="inline-block w-1/3 md:hidden font-bold">ID</span>{{ index +1  }}</td>
+				<td class="p-2 md:border md:border-grey-500 text-left block md:table-cell"><span class="inline-block w-1/3 md:hidden font-bold">Name</span>{{ item.name }}</td>
+				<td class="p-2 md:border md:border-grey-500 text-left block md:table-cell"><span class="inline-block w-1/3 md:hidden font-bold">Second Name</span>{{ item.secondName }}</td>
 				<td class="p-2 md:border md:border-grey-500 text-left block md:table-cell">
 					<span class="inline-block w-1/3 md:hidden font-bold">Actions</span>
 					<button @click="EditModal(item.id)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded">Edit</button>
